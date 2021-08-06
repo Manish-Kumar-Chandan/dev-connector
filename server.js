@@ -5,6 +5,7 @@ const PORT = process.env.PORT || 5000
 const app = express()
 
 connectDB();
+app.use(express.json({extended: false}));
 
 app.get('/', (req, res)=>{
     res.status(200).send({msg:"Home"})

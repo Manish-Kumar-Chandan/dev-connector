@@ -1,3 +1,4 @@
 {
-    "mongoURI":"mongodb://localhost:27017/dev_connector_db"
+    "mongoURI":"mongodb://localhost:27017/dev_connector_db",
+    "jwtSecret":"mysecretkey"
 }

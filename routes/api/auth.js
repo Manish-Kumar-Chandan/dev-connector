@@ -49,12 +49,12 @@ router.post('/',
                 id: user.id
             }
         }
-        jwt.sign(payload, config.get('jwtSecret'),{expiresIn:3600},(err, token)=>{
+        jwt.sign(payload, config.get('jwtSecret'),{expiresIn:36000},(err, token)=>{
             if(err) throw err
             res.json({token})
         })
         
-        //return res.status(200).json({msg:"User Register Successfully"});
+        //return res.status(200).json({msg:"Login Successfully"});
     } catch (error) {
         return res.status(324).json({error:error.message})
     }

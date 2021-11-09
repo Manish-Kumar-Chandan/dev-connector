@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { loadUser } from '../../actions/auth';
 
 
+//this is line
 
 const Dashboard = ({ auth }) => {
     const dashboard =(<>
